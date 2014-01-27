@@ -1,9 +1,6 @@
-STAWIS_Main
+STAWIS
 ===========
 
-Main Stawis Project
+XXX Stawis Project
 
-Fork this for each given Task (test particulars)
-
-IMPORTANT: DO NOT CLONE -THIS- REPOSITORY AS IT MUST STAY AT THE INITAL STATE!
-----------
+-[ ] Write test particulars into Readme

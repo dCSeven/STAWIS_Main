@@ -1,6 +1,6 @@
 STAWIS
 ===========
 
-XXX Stawis Project
+#####XXX Stawis Project
 
--[ ] Write test particulars into Readme
+- [ ] Write test particulars into Readme

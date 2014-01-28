@@ -2,6 +2,9 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STAWIS", "STAWIS.csproj", "{FE297AE2-84D3-4B7F-A24C-C0CDC31DD29B}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stawis", "Stawis\Stawis.csproj", "{002763A4-9B0A-45E7-87A4-4FDD772A5874}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +16,10 @@ Global
 		{FE297AE2-84D3-4B7F-A24C-C0CDC31DD29B}.Debug|x86.Build.0 = Debug|x86
 		{FE297AE2-84D3-4B7F-A24C-C0CDC31DD29B}.Release|x86.ActiveCfg = Release|x86
 		{FE297AE2-84D3-4B7F-A24C-C0CDC31DD29B}.Release|x86.Build.0 = Release|x86
+		{002763A4-9B0A-45E7-87A4-4FDD772A5874}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{002763A4-9B0A-45E7-87A4-4FDD772A5874}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{002763A4-9B0A-45E7-87A4-4FDD772A5874}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{002763A4-9B0A-45E7-87A4-4FDD772A5874}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

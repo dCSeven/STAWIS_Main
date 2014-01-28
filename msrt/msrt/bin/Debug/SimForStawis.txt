@@ -51,16 +51,33 @@ delayonestep 2000
 charging on
 delayonestep 2000
 charging off
-delayonestep 2000
+delayonestep 1000
 
 converterstart 1
-delayonestep 3000
-converterend 1
+move 1 30 0 1
+move 1 70 -1 0
+
 delayonestep 2000
+converterend 1
+delayonestep 3000
+
+//move
+
+move 2 70 0 1
+move 2 360 -1 0
+
 tappingstart 1
 delayonestep 2000
 tappingend 1
 delayonestep 2000
+
+move 2 110 0 1
+
+startCasting 2		
+delayonestep 2000	
+endCasting   2	
+
+
 
 desulphstart 2
 delayonestep 2000
@@ -78,7 +95,7 @@ transport
 delayonestep 2000
 
 chargierpfanne zu Converter 2 bewegen
-move 1 100 1 0
+move 1 80 1 0
 move 1 230 1 -1
 move 1 120 0 -1
 delayonestep 3000
@@ -88,12 +105,28 @@ delayonestep 3000
 charging off
 delayonestep 2000
 converterstart 2
+move 1 120 0 1
+move 1 190 -1 0
+move 1 90 0 -1
+
 delayonestep 2000
-converterend 2
+converterend 2		//16 2 0
 delayonestep 3000
+
+//move
+
+move 2 70 0 1
+move 2 220 -1 0
+
 tappingstart 2
 delayonestep 2000
 tappingend 2
 delayonestep 2000
+
+move 2 110 0 1
+
+startCasting 2		
+delayonestep 2000	
+endCasting   2	
 
 

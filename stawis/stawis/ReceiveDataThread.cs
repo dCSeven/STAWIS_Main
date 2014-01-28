@@ -41,6 +41,7 @@ namespace Stawis {
                 case 16: converterTreatment(); break;
                 case 17: tapping(); break;
                 case 18: setLadlePosition(); break;
+                case 19: casting(); break;
                 default: break;
               }
 
@@ -109,5 +110,10 @@ namespace Stawis {
       model.tapping(convNo, on);
     }
 
+    void casting(){
+        int ladleNo = In.ReadInt();
+        int on = In.ReadInt();
+        model.castingTreatment(ladleNo, on);
+    }
   }
 }

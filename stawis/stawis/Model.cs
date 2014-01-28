@@ -14,8 +14,9 @@ namespace Stawis {
     static Converter conv2 = new Converter(2);
     static Converter conv3 = new Converter(3);
     static Ladle chgl = new Ladle(1);
+    static Ladle chgt = new Ladle(2);
 
-    Station[] stations = {conv1,conv2,conv3,des1,des2,chgl};
+    Station[] stations = {conv1,conv2,conv3,des1,des2,chgl,chgt};
     List<Order> orderPool = new List<Order>();
 
     List<string> alarmList = new List<string>();
@@ -294,11 +295,17 @@ namespace Stawis {
         if (station is Converter) {
           if (on == States.ON && station.State == States.FINISHED) {
             station.State = States.CASTING;
+              chgt.Order = station.Order;
+              
           } else if (on == States.OFF && station.State == States.CASTING) {
             station.State = States.FREE;
             chgl.State = States.FREE;
             chgl.Center = chgl.ParkPosition;
+            chgt.State = States.BUSY;
             station.Order = null;
+
+            
+
           } else {
             newAlarm("Tapping: Converter " + convNo + " state:" + station.State + "  not compatible");
           }
@@ -310,6 +317,28 @@ namespace Stawis {
       } else {
         newAlarm("Tapping: wrong converterNo: " + convNo);
       }
+    }
+	
+	public void castingTreatment(int ladleNo, int on)
+    {
+        if(ladleNo>2){newAlarm("laddle no "+ladleNo+" not existing");return;}
+        Ladle l = (ladleNo == 2) ? chgt : chgl; // provisorisch (sollte in liste liegen)
+        if (on == States.ON)
+        {
+            l.State = States.CASTING;
+            l.Refresh = true;
+            l.Move = true;
+            // break;
+        }
+        else if (on == States.OFF)
+        {
+            Order o = l.Order;
+            l.Order = null;
+            l.State = States.FREE;
+            l.Center = l.ParkPosition;
+            l.Refresh = true;
+            l.Move = true;
+        }
     }
 
     public int calculateDistance(Point p1, Point p2) {

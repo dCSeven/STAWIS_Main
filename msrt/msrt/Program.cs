@@ -46,6 +46,8 @@ namespace MSRT {
             case "charging": DoCharging(); break;
             case "converterstart": DoConverterStart(); break;
             case "converterend": DoConverterEnd(); break;
+            case "startCasting": startCasting(); break;
+            case "endCasting": endCasting(); break;
             case "tappingstart": DoTappingStart(); break;
             case "tappingend": DoTappingEnd(); break;
             case "break": stopScript = true; break;
@@ -157,6 +159,18 @@ namespace MSRT {
       try {
         client.Send(data, data.Length, remoteEndpoint);
       } catch (Exception e) { }
+    }
+
+    static void startCasting(){
+        int station = In.ReadInt();
+        string msg = String.Format("{0:d2} {1:d1} {2:d1}", 19, station, 1);
+        Send(msg);
+    }
+
+    static void endCasting(){
+        int station = In.ReadInt();
+        string msg = String.Format("{0:d2} {1:d1} {2:d1}", 19, station, 0);
+        Send(msg);
     }
   }
 }

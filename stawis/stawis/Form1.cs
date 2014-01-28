@@ -20,8 +20,7 @@ namespace Stawis {
       InitializeComponent();
       model = new Model(this);
       noOfStations = model.getStationCount();
-      Panel[] panels = { pnlC1, pnlC2, pnlC3, pnlD1, pnlD2, pnlChgl };
-
+      Panel[] panels = { pnlC1, pnlC2, pnlC3, pnlD1, pnlD2, pnlChgl , pnlChgt}; //DOPONA
       for (int st = 0; st < noOfStations; st++) {
         Station station = model.getStation(st);
         station.PanelName = panels[st];
@@ -172,6 +171,11 @@ namespace Stawis {
 
     private void cmdReset_Click(object sender, EventArgs e) {
       model.resetAll();
+    }
+
+    private void panel1_Paint(object sender, PaintEventArgs e)
+    {
+
     }
 
   }

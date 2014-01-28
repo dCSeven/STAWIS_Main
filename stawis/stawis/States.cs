@@ -11,6 +11,7 @@ namespace Stawis {
     public const int BUSY = 1;
     public const int CHARGING = 2;
     public const int TAPPING = 3;
+    public const int CASTING = 3;
     public const int READY = 4;
     public const int FINISHED = 5;
     public const int INACTIVE = 6;
@@ -21,7 +22,7 @@ namespace Stawis {
       Properties.Resources.LadleEmpty,  // 0
       Properties.Resources.LadleFull, // 1
       Properties.Resources.LadleTilt, //2
-      Properties.Resources.LadleEmpty,  // 3
+      Properties.Resources.LadleTilt,  // 3
       Properties.Resources.LadleEmpty,  // 4
       Properties.Resources.LadleEmpty,  // 5
       Properties.Resources.LadleEmpty   // 6

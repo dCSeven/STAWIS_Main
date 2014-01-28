@@ -37,6 +37,25 @@ namespace Stawis {
       get { return alarmList; }
     }
 
+    public void resetAll() {
+      for (int stNo = 0; stNo < stations.Length; stNo++) {
+        Station station = stations[stNo];
+        station.State = States.FREE;
+        station.Center = station.ParkPosition;
+        station.Order = null;
+        station.Refresh = true;
+        if (station is Ladle) station.Move = true;
+      }
+      for (int i = orderPool.Count - 1; i >= 0; i--) {
+        orderPool.RemoveAt(i);
+      }
+      OrderRefresh = true;
+      for (int i = alarmList.Count - 1; i >= 0; i--) {
+        alarmList.RemoveAt(i);
+      }
+      AlarmRefresh = true;
+    }
+
     public void setParkPositionOfLadle(int ladleNo, Point parkPosition) {
       int stNo = ladleNo + 4;
       Station station = getStation(stNo);
@@ -228,9 +247,6 @@ namespace Stawis {
             Order o = chgl.Order;
             chgl.Order = null;
             chgl.State = States.FREE;
-            Point p = chgl.Center;
-            p.Y = p.Y + 100;
-            chgl.Center = p;
             conv = station;
             conv.Order = o;
             conv.State = States.READY;
@@ -277,8 +293,8 @@ namespace Stawis {
         Station station = stations[stNo];
         if (station is Converter) {
           if (on == States.ON && station.State == States.FINISHED) {
-            station.State = States.TAPPING;
-          } else if (on == States.OFF && station.State == States.TAPPING) {
+            station.State = States.CASTING;
+          } else if (on == States.OFF && station.State == States.CASTING) {
             station.State = States.FREE;
             chgl.State = States.FREE;
             chgl.Center = chgl.ParkPosition;

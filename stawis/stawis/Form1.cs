@@ -26,6 +26,7 @@ namespace Stawis {
         Station station = model.getStation(st);
         station.PanelName = panels[st];
         station.Center = calcStationCenter(panels[st]);
+        station.ParkPosition = station.Center;
         station.Refresh = true;
       }
    
@@ -167,6 +168,10 @@ namespace Stawis {
       if (cbxAlarm.Items.Count == 0) {
         cbxAlarm.Text = "";
       }
+    }
+
+    private void cmdReset_Click(object sender, EventArgs e) {
+      model.resetAll();
     }
 
   }

@@ -34,6 +34,7 @@
       this.colWeight = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
       this.cbxAlarm = new System.Windows.Forms.ComboBox();
       this.cmdClose = new System.Windows.Forms.Button();
+      this.cmdReset = new System.Windows.Forms.Button();
       this.SuspendLayout();
       // 
       // pnlD1
@@ -71,7 +72,7 @@
       this.pnlC3.BackColor = System.Drawing.Color.Transparent;
       this.pnlC3.BackgroundImage = global::Stawis.Properties.Resources.ConvEmpty;
       this.pnlC3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-      this.pnlC3.Location = new System.Drawing.Point(654, 43);
+      this.pnlC3.Location = new System.Drawing.Point(617, 43);
       this.pnlC3.Name = "pnlC3";
       this.pnlC3.Size = new System.Drawing.Size(73, 82);
       this.pnlC3.TabIndex = 5;
@@ -81,7 +82,7 @@
       this.pnlC2.BackColor = System.Drawing.Color.Transparent;
       this.pnlC2.BackgroundImage = global::Stawis.Properties.Resources.ConvEmpty;
       this.pnlC2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-      this.pnlC2.Location = new System.Drawing.Point(496, 43);
+      this.pnlC2.Location = new System.Drawing.Point(482, 43);
       this.pnlC2.Name = "pnlC2";
       this.pnlC2.Size = new System.Drawing.Size(73, 82);
       this.pnlC2.TabIndex = 4;
@@ -139,11 +140,22 @@
       this.cmdClose.UseVisualStyleBackColor = true;
       this.cmdClose.Click += new System.EventHandler(this.cmdClose_Click);
       // 
+      // cmdReset
+      // 
+      this.cmdReset.Location = new System.Drawing.Point(565, 388);
+      this.cmdReset.Name = "cmdReset";
+      this.cmdReset.Size = new System.Drawing.Size(76, 25);
+      this.cmdReset.TabIndex = 9;
+      this.cmdReset.Text = "Reset";
+      this.cmdReset.UseVisualStyleBackColor = true;
+      this.cmdReset.Click += new System.EventHandler(this.cmdReset_Click);
+      // 
       // Form1
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(784, 489);
+      this.ClientSize = new System.Drawing.Size(756, 489);
+      this.Controls.Add(this.cmdReset);
       this.Controls.Add(this.pnlC2);
       this.Controls.Add(this.cmdClose);
       this.Controls.Add(this.cbxAlarm);
@@ -174,6 +186,7 @@
     public System.Windows.Forms.ListView lstOrders;
     public System.Windows.Forms.ComboBox cbxAlarm;
     private System.Windows.Forms.Button cmdClose;
+    private System.Windows.Forms.Button cmdReset;
   }
 }
 

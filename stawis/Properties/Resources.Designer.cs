@@ -219,10 +219,5 @@ namespace STAWIS.Properties {
         ///    &lt;resheader name=&quot;resmimetype&quot;&gt;text/microsoft-resx&lt;/resheader&gt;
         ///    &lt;resheader n [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
-        internal static string Resources {
-            get {
-                return ResourceManager.GetString("Resources", resourceCulture);
-            }
-        }
     }
 }

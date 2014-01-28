@@ -28,3 +28,8 @@ G:\aSkripten\5-apr\uebungen\schule\G3-Vorbereitung-mitCmd-mitProcessThread\MSRT\
 C:\Users\Anton\Documents\arbeit\aSkripten\5-apr\uebungen\schule\StawisTestGrundlage\MSRT\MSRT\bin\Debug\MSRT.exe.config
 C:\Users\Anton\Documents\arbeit\aSkripten\5-apr\uebungen\schule\StawisTestGrundlage\MSRT\MSRT\obj\Debug\MSRT.exe
 C:\Users\Anton\Documents\arbeit\aSkripten\5-apr\uebungen\schule\StawisTestGrundlage\MSRT\MSRT\obj\Debug\MSRT.pdb
+C:\Users\Florian\Documents\GitHub\STAWIS_Main\msrt\msrt\bin\Debug\MSRT.exe.config
+C:\Users\Florian\Documents\GitHub\STAWIS_Main\msrt\msrt\obj\Debug\MSRT.exe
+C:\Users\Florian\Documents\GitHub\STAWIS_Main\msrt\msrt\bin\Debug\MSRT.exe
+C:\Users\Florian\Documents\GitHub\STAWIS_Main\msrt\msrt\bin\Debug\MSRT.pdb
+C:\Users\Florian\Documents\GitHub\STAWIS_Main\msrt\msrt\obj\Debug\MSRT.pdb

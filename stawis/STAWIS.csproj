@@ -99,7 +99,9 @@
     <Content Include="stawis\Resources\LadleEmpty.png" />
     <Content Include="stawis\Resources\LadleFull.png" />
     <Content Include="stawis\Resources\LadleTilt.png" />
-    <Content Include="stawis\Stawis.csproj" />
+    <Content Include="stawis\Stawis.csproj">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
   <ProjectExtensions>

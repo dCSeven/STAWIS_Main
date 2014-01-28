@@ -89,46 +89,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ConvCharging.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ConvDeactiv.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ConvEmpty.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ConvFinished.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ConvFull.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ConvProcess.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ConvTilt.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\DesEmpty.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\DesFinished.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\DesFull.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\DesProcess.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\LadleEmpty.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\LadleFull.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\LadleTilt.png" />
+    <None Include="Properties\Resources.resx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
